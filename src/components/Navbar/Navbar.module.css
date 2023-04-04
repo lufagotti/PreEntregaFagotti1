@@ -1,0 +1,19 @@
+.containerNavbar{
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    justify-content: space-between;
+    background-color: #c096df;
+}
+
+.categorias{
+    display: flex;
+    gap: 30px;
+    list-style: none;
+}
+
+.color{
+    padding-left: 0px;
+    padding-right: 20px;
+    padding-top: 14px;
+}

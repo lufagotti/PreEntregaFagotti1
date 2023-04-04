@@ -1,11 +1,17 @@
-
 import './App.css';
+import ItemList from './components/ItemList/ItemList';
+import { Navbar } from './components/Navbar/Navbar';
 
 function App() {
+
+  let saludo = "Hola Bienvenido"
+
+
   return (
-    <div className="App">
-    <h1>hola desde react</h1>
-    </div>
+  <div className="App">
+    <Navbar />
+    <ItemList saludo={saludo}/>
+  </div>
   );
 }
 
