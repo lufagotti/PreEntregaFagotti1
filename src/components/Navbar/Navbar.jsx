@@ -10,9 +10,9 @@ export const Navbar = () => {
     <div className={styles.containerNavbar}>
         <img src={imgLogo} alt="logo empresa" />
         <ul className={styles.categorias}>
-            <li>Accesorios</li>
+            <li>Inicio</li>
+            <li>Acessorios</li>
             <li>Maquillaje</li>
-            <li>Carteras</li>
         </ul>
         <CartWidget />
     </div>

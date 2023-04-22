@@ -1,8 +1,17 @@
+import ItemCard from "./ItemCard"
+import  "./ItemList.css"
 
-const ItemList = ({saludo}) => {
+
+const ItemList = ({items}) => {
   return (
-    <div>
-        <h1>{saludo}</h1>
+    <div className="card">
+      {
+        items.map((item) => {
+          return (
+            <ItemCard item={item} key={item.id}/>
+          )
+        })
+      }
     </div>
   )
 }
