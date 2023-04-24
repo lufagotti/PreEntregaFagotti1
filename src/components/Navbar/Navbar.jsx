@@ -13,9 +13,15 @@ export const Navbar = () => {
             <img className={styles.img} src={imgLogo} alt="logo empresa" />
             </Link>
             <ul className={styles.categorias}>
-                <Link to="/">Inicio</Link>
-                <Link to="/category/accesorios">Accesorios</Link>
-                <Link to="/category/maquillaje">Maquillaje</Link>
+                <Link className={styles.pag} to="/">
+                Inicio
+                </Link>
+                <Link className={styles.pag} to="/category/accesorios">
+                Accesorios
+                </Link>
+                <Link className={styles.pag} to="/category/maquillaje">
+                Maquillaje
+                </Link>
             </ul>
             <CartWidget />
         </div>

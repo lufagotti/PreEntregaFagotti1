@@ -11,11 +11,11 @@ import { Link } from "react-router-dom";
 
 const ItemCard = ({ item }) => {
   return (
-    <Card sx={{ height: "300px", width: "300px", marginBottom:"30px" }}>
+    <Card sx={{ height: "auto", width: "300px", marginBottom:"30px" }}>
       <CardMedia
         component="img"
         alt="green iguana"
-        height="140"
+        height="300px"
         image={item.img}
       />
       <CardContent>
@@ -31,7 +31,7 @@ const ItemCard = ({ item }) => {
       </CardContent>
       <CardActions>
         <Link to={`/itemDetail/${item.id}`}>
-        <Button variant="contained" size="small">Ver detalle</Button>
+        <Button variant="contained" size="small" >Ver detalle</Button>
         </Link>
       </CardActions>
     </Card>

@@ -1,0 +1,17 @@
+.detail{
+    background-color: antiquewhite;
+    margin-top: 60px;
+    margin-bottom: 60px;
+    margin-left: 40px;
+    margin-right: 40px;
+    display: flex;
+}
+
+.description{
+    margin-left: 30px;
+}
+
+.imagen{
+    width: 500px;
+    height: 500px;
+}
