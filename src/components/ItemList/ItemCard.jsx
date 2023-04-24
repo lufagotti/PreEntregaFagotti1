@@ -7,6 +7,8 @@ import {
   Button,
 } from "@mui/material";
 
+import { Link } from "react-router-dom";
+
 const ItemCard = ({ item }) => {
   return (
     <Card sx={{ height: "300px", width: "300px", marginBottom:"30px" }}>
@@ -23,9 +25,14 @@ const ItemCard = ({ item }) => {
         <Typography variant="body2" color="text.secondary">
           {item.description}
         </Typography>
+        <Typography variant="h7" color="secondary">
+            ${item.price}
+        </Typography>
       </CardContent>
       <CardActions>
-        <Button size="small">Ver detalle</Button>
+        <Link to={`/itemDetail/${item.id}`}>
+        <Button variant="contained" size="small">Ver detalle</Button>
+        </Link>
       </CardActions>
     </Card>
   );

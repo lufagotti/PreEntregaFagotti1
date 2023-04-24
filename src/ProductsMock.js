@@ -1,16 +1,16 @@
 export const products = [
     {
         id: 1,
-        title:"collares perlas y lentejuelas",
+        title:"Collares Scom",
         price: 2000,
         stock: 10,
-        description: "Set dos collares de perlas y lentejuelas",
+        description: "Set dos collares de perlas y lentejuelas de colores",
         category:"accesorios",
         img: "https://res.cloudinary.com/dzyku6fye/image/upload/v1681768376/reactjs%20coderhouse/accesorios1_qpzv8h.png",
     },
     {
         id: 2,
-        title:"collar dije corazon",
+        title:"Collar Heart",
         price: 1600,
         stock: 10,
         description: "Collar mitad de lentejuelas y perlas con dije de corazon",
@@ -19,7 +19,7 @@ export const products = [
     },
     {
         id: 3,
-        title:"piluso radiate positivity",
+        title:"Piluso radiate positivity",
         price: 4000,
         stock: 10,
         description: "Piluso de tela con bordado frontal",
@@ -28,7 +28,7 @@ export const products = [
     },
     {
         id: 4,
-        title:"piluso heladito",
+        title:"Piluso heladito",
         price: 4000,
         stock: 10,
         description: "Piluso de tela con bordado frontal",
@@ -37,7 +37,7 @@ export const products = [
     },
     {
         id: 5,
-        title:"paleta de sombras dreamy",
+        title:"Paleta Dreamy",
         price: 2400,
         stock: 10,
         description: "Paleta de sombras para ojos, con vitamina E, contiene 9 tonalidades",
@@ -46,16 +46,16 @@ export const products = [
     },
     {
         id: 6,
-        title:"paleta de sombras lucky",
+        title:"Paleta Lucky",
         price: 2800,
         stock: 10,
-        description: "Paleta de sombras de larga duración e intrasferibles con Vitamina E, contiene 10 tonalidades",
+        description: "Paleta de sombras para ojos, con vitamina E, contiene 10 tonalidades",
         category:"maquillaje",
         img: "https://res.cloudinary.com/dzyku6fye/image/upload/v1681769393/reactjs%20coderhouse/maquillaje2_aespll.png",
     },
     {
         id: 7,
-        title:"ink velvet 01",
+        title:"Ink velvet 01",
         price: 1800,
         stock: 10,
         description: "Tinta para labios de acabado matte y larga duración",
@@ -64,7 +64,7 @@ export const products = [
     },
     {
         id: 8,
-        title:"ink velvet 32",
+        title:"Ink velvet 32",
         price: 1800,
         stock: 10,
         description: "Tinta para labios de acabado matte y larga duración",
