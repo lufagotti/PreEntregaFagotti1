@@ -12,7 +12,7 @@ export const products = [
         id: 2,
         title:"Collar Heart",
         price: 1600,
-        stock: 10,
+        stock: 8,
         description: "Collar mitad de lentejuelas y perlas con dije de corazon",
         category:"accesorios",
         img: "https://res.cloudinary.com/dzyku6fye/image/upload/v1681768385/reactjs%20coderhouse/accesorios2_g7a8z6.png",
