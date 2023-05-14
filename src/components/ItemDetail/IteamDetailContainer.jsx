@@ -9,7 +9,7 @@ export const IteamDetailContainer = () => {
 
   const [product, setProduct] = useState({});
 
-  const {agregarAlCarrito} = useContext(CartContext)
+  const {agregarAlCarrito, getQuantityById} = useContext(CartContext)
 
   const {id} = useParams()
 
@@ -27,9 +27,11 @@ export const IteamDetailContainer = () => {
     agregarAlCarrito(data)
   }
 
+  let cantidadTotal = getQuantityById(product.id)
+
   return (
     <div>
-      <ItemDetail product={product} onAdd={onAdd} />
+      <ItemDetail product={product} onAdd={onAdd} cantidadTotal={cantidadTotal} />
     </div>
   )
 }

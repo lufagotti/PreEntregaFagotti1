@@ -1,6 +1,7 @@
 
 import {BsBagPlus} from "react-icons/bs"
 import styles from "../Navbar/Navbar.module.css"
+import style from "../CartWidget/CartWidget.module.css"
 import { Link } from "react-router-dom"
 import { useContext } from "react"
 import { CartContext } from "../../context/CartContext"
@@ -15,8 +16,8 @@ const CartWidget = () => {
     return (
         <Link to="/cart">
         <div className={styles.color}>
-        <BsBagPlus size={30} />
-        <div>
+        <BsBagPlus size={40} />
+        <div className={style.counter}>
             <span>{total}</span>
         </div>
         </div>

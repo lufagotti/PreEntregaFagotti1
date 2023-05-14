@@ -3,7 +3,9 @@
     height: 10vh;
     display: flex;
     justify-content: space-between;
-    background-color: #c096df;
+    background-color: #9c93b5;
+    align-items: center;
+    padding: 10px;
 }
 
 .categorias{
@@ -15,18 +17,18 @@
 }
 
 .color{
-    padding-right: 20px;
-    padding-top: 19px;
+    padding-right: 25px;
+    padding-top: 8px;
 }
 
 .img{
-    width: 66px;
-    height: 65px;
+    width: 88px;
+    height: 84px;
 }
 
 .pag{
     text-decoration: none;
-    background-color: antiquewhite;
-    padding: 10px 20px;
+    background-color: #e8d0d0;
+    padding: 16px 20px;
     border-radius: 10px;
 }

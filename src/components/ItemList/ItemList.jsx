@@ -1,10 +1,10 @@
 import ItemCard from "./ItemCard"
-import  "./ItemList.css"
+import style from "./ItemList.module.css"
 
 
 const ItemList = ({items}) => {
   return (
-    <div className="card">
+    <div className={style.card}>
       {
         items.map((item) => {
           return (

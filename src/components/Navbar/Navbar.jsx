@@ -2,7 +2,7 @@
 
 import CartWidget from "../CartWidget/CartWidget";
 import styles from "./Navbar.module.css"
-import imgLogo from "../../assets/images/1.jpg"
+import imgLogo from "../../assets/images/2.png"
 import {Outlet, Link} from "react-router-dom"
 
 export const Navbar = () => {

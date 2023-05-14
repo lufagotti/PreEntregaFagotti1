@@ -1,9 +1,15 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import Counter from './Counter'
 
-const CounterContainer = ({stock, onAdd}) => {
+const CounterContainer = ({stock, onAdd, initial=1}) => {
   
-  const[counter, setCounter]= useState(0)
+  const[counter, setCounter]= useState(initial)
+  console.log("me actualice")
+  console.log(initial)
+
+  useEffect(()=>{
+    setCounter(initial)
+  },[initial])
 
   const sumar = () =>{
     if(counter < stock){
@@ -14,7 +20,9 @@ const CounterContainer = ({stock, onAdd}) => {
   }
 
   const restar = () =>{
-    setCounter(counter - 1)
+    if(counter > 1){
+      setCounter(counter - 1)
+    }
   }
 
   return (

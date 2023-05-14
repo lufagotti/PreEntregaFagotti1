@@ -9,6 +9,7 @@ import {
 
 import { Link } from "react-router-dom";
 
+
 const ItemCard = ({ item }) => {
   return (
     <Card sx={{ height: "auto", width: "300px", marginBottom:"30px" }}>
@@ -31,7 +32,7 @@ const ItemCard = ({ item }) => {
       </CardContent>
       <CardActions>
         <Link to={`/itemDetail/${item.id}`}>
-        <Button variant="contained" size="small" >Ver detalle</Button>
+        <Button variant="contained" size="small">Ver detalle</Button>
         </Link>
       </CardActions>
     </Card>
