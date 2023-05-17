@@ -4,8 +4,6 @@ import Counter from './Counter'
 const CounterContainer = ({stock, onAdd, initial=1}) => {
   
   const[counter, setCounter]= useState(initial)
-  console.log("me actualice")
-  console.log(initial)
 
   useEffect(()=>{
     setCounter(initial)

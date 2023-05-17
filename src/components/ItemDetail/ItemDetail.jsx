@@ -13,7 +13,7 @@ export const ItemDetail = ({product, onAdd, cantidadTotal}) => {
       <h3>{product.description}</h3>
       <CounterContainer stock={product.stock} onAdd={onAdd} initial={cantidadTotal}/>
       <Link to="/">
-      <Button variant="contained" size="small" >Ir al inicio</Button>
+      <Button variant="contained" size="small" style={{backgroundColor:"#9c93b5"}} >Ir al inicio</Button>
       </Link>
       </div>
     </div>

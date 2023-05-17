@@ -23,16 +23,16 @@ const ItemCard = ({ item }) => {
         <Typography gutterBottom variant="h5" component="div">
           {item.title}
         </Typography>
-        <Typography variant="body2" color="text.secondary">
+        {/* <Typography variant="body2" color="text.secondary">
           {item.description}
-        </Typography>
-        <Typography variant="h7" color="secondary">
+        </Typography> */}
+        <Typography variant="h7" color="secondary" fontSize={30}>
             ${item.price}
         </Typography>
       </CardContent>
       <CardActions>
         <Link to={`/itemDetail/${item.id}`}>
-        <Button variant="contained" size="small">Ver detalle</Button>
+        <Button variant="contained" size="small" style={{backgroundColor:"#9c93b5"}}>Ver detalle</Button>
         </Link>
       </CardActions>
     </Card>
