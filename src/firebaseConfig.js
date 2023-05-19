@@ -3,12 +3,12 @@ import { initializeApp } from "firebase/app";
 import { getFirestore } from "firebase/firestore"
 
 const firebaseConfig = {
-  apiKey: "AIzaSyDP86XcjegH__xdh-khFr6Qe-JtZbevCJc",
-  authDomain: "cephie-react.firebaseapp.com",
-  projectId: "cephie-react",
-  storageBucket: "cephie-react.appspot.com",
-  messagingSenderId: "630448842550",
-  appId: "1:630448842550:web:21715ecf6accf325b6f597"
+  apiKey: process.env.REACT_APP_APIKEY,
+  authDomain: process.env.REACT_APP_AUTHDOMAIN ,
+  projectId: process.env.REACT_APP_PROYECTID ,
+  storageBucket: process.env.REACT_APP_STORAGEBUCKET ,
+  messagingSenderId: process.env.REACT_APP_MESSAGINGSENDERID ,
+  appId: process.env.REACT_APP_APPID
 };
 
 const app = initializeApp(firebaseConfig);
