@@ -1,17 +1,26 @@
 .detail{
-    background-color: #eedbd8;
-    margin-top: 60px;
-    margin-bottom: 60px;
-    margin-left: 40px;
-    margin-right: 40px;
+    margin-top: 14px;
+    margin-bottom: 0px;
+    margin-left: 150px;
     display: flex;
 }
 
 .description{
     margin-left: 30px;
+    background-color: #e8d0d0;
+    padding-left: 35px;
+    padding-right: 35px;
+    border: 2px solid;
+    margin-right: 200px;
 }
 
 .imagen{
     width: 500px;
     height: 500px;
+    border: 2px solid;
+}
+
+h1{
+    background-color: #9c93b5;
+    text-align: center;
 }

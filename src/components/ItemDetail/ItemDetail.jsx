@@ -10,7 +10,9 @@ export const ItemDetail = ({product, onAdd, cantidadTotal}) => {
       <img className={styles.imagen} src={product.img} alt="" />
       <div className={styles.description}>
       <h1>{product.title}</h1>
+      <h3>Descripcion:</h3>
       <h3>{product.description}</h3>
+      <h2>${product.price}</h2>
       <CounterContainer stock={product.stock} onAdd={onAdd} initial={cantidadTotal}/>
       <Link to="/">
       <Button variant="contained" size="small" style={{backgroundColor:"#9c93b5"}} >Ir al inicio</Button>

@@ -27,7 +27,7 @@ const ItemCard = ({ item }) => {
           {item.description}
         </Typography> */}
         <Typography variant="h7" color="secondary" fontSize={30}>
-            ${item.price}
+            ${item.price}.-
         </Typography>
       </CardContent>
       <CardActions>

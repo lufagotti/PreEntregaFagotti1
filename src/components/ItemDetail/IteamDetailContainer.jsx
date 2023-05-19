@@ -1,10 +1,11 @@
 import React, { useContext, useEffect, useState } from 'react'
 import { ItemDetail } from './ItemDetail'
-import { products } from '../../ProductsMock'
+
 import {useParams} from "react-router-dom"
 import { CartContext } from '../../context/CartContext'
 import Swal from 'sweetalert2'
-
+import { database } from '../../firebaseConfig'
+import {getDoc, collection, doc} from "firebase/firestore"
 
 export const IteamDetailContainer = () => {
 
@@ -15,8 +16,12 @@ export const IteamDetailContainer = () => {
   const {id} = useParams()
 
   useEffect(() =>{
-    let encontrado = products.find(prod => prod.id === Number(id))
-    setProduct(encontrado)
+  const itemCollection = collection(database, "products")
+  const refDoc = doc(itemCollection, id)
+  getDoc(refDoc).then(res => setProduct({
+    ...res.data(),
+    id: res.id
+  })).catch(err => console.log(err))
   }, [id])
 
   const onAdd =(cantidad)=>{
